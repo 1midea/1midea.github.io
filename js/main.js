@@ -11,7 +11,7 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
-  
+
     //Disable mouse scroll wheel zoom on embedded Google Maps
     $('.maps').click(function () {
         $('.maps iframe').css("pointer-events", "auto");
@@ -162,7 +162,7 @@ $(document).ready(function () {
 /*==============================================================
     set parallax
  ==============================================================*/
-    
+
     SetParallax();
 
     $('.parallax-fix').each(function () {
@@ -259,7 +259,7 @@ $(document).ready(function () {
 /*==============================================================
     zoom gallery
 ==============================================================*/
-    
+
     $('.zoom-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -323,7 +323,7 @@ $(document).ready(function () {
 /*==============================================================
     ajax magnific popup for onepage portfolio
 ==============================================================*/
-    
+
     $('.ajax-popup').magnificPopup({
         type: 'ajax',
         alignTop: true,
@@ -387,7 +387,7 @@ $(document).ready(function () {
 /*==============================================================
     form to email
 ==============================================================*/
-    
+
     $("#success").hide();
     $("#success-contact").hide();
     //restaurant contact form
@@ -934,7 +934,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 url: "email-templates/agency-contact.php",
-                data: $("#agencycontactform").serialize(),
+                data: $("#form2").serialize(),
                 success: function (result) {
                     $('input[type=text],textarea').each(function () {
                         $(this).val('');
@@ -948,22 +948,22 @@ $(document).ready(function () {
     });
     function ValidationAgencyContactForm() {
         var error = true;
-        $('#agencycontactform input[type=text]').each(function (index) {
+        $('#form2 input[type=text]').each(function (index) {
             if (index == 0) {
                 if ($(this).val() == null || $(this).val() == "") {
-                    $("#agencycontactform").find("input:eq(" + index + ")").addClass("required-error");
+                    $("#form2").find("input:eq(" + index + ")").addClass("required-error");
                     error = false;
                 }
                 else {
-                    $("#agencycontactform").find("input:eq(" + index + ")").removeClass("required-error");
+                    $("#form2").find("input:eq(" + index + ")").removeClass("required-error");
                 }
             }
             else if (index == 1) {
                 if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#agencycontactform").find("input:eq(" + index + ")").addClass("required-error");
+                    $("#form2").find("input:eq(" + index + ")").addClass("required-error");
                     error = false;
                 } else {
-                    $("#agencycontactform").find("input:eq(" + index + ")").removeClass("required-error");
+                    $("#form2").find("input:eq(" + index + ")").removeClass("required-error");
                 }
             }
 
@@ -972,7 +972,7 @@ $(document).ready(function () {
     }
 
 
-    
+
 
 
     //end ready
