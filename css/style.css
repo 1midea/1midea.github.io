@@ -1613,7 +1613,7 @@ footer img {max-width: 156px;}
     Wedding demo
 ====================================== */
 
-.wedding-slider-line { border-bottom: 4px double rgba(147,228,208,.5); display: inline-block;}
+.home-slider-line { border-bottom: 4px double rgb(227, 29, 59); display: inline-block;}
 .title-dividers:after { content: ""; border-bottom: 1px solid #93e4cf; display: inline-block; position: absolute; top: 49%; width: 40px; right: -60px; }
 .title-dividers:before { content: ""; border-bottom: 1px solid #93e4cf; display: inline-block; left: -60px; position: absolute; top: 49%; width: 40px; }
 .couple-quotes { color: #85d4c0; margin-top: 40px;}
