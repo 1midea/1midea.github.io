@@ -20,27 +20,28 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/smile.png" />
     <!--114x114.png"-->
     <!-- animation -->
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- et line icon -->
-    <link rel="stylesheet" href="css/et-line-icons.css" />
+    <link rel="stylesheet" href="/css/et-line-icons.css" />
     <!-- font-awesome icon -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <!-- owl carousel -->
-    <link rel="stylesheet" href="css/owl.transitions.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="/css/owl.transitions.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.css" />
     <!-- magnific popup -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
     <!-- pull menu -->
-    <link rel="stylesheet" href="css/pull-menu-sideslide.css" />
+    <link rel="stylesheet" href="/css/pull-menu-sideslide.css" />
     <!-- style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- responsive css -->
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
@@ -183,7 +184,7 @@ story to engaging and captivating entertainment content</p>
                 <div class="row">
                     <!-- section image -->
                     <div class="col-md-6 col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden" style="background-image:url('images/img5.jpg');">
-                        <span class="architecture-title-number title-big alt-font font-weight-600 position-absolute white-text">02</span>
+                        <span class="architecture-title-number title-big alt-font font-weight-600 position-absolute white-text">01</span>
                     </div>
                     <!-- end section image -->
                     <!-- section title -->
@@ -414,6 +415,9 @@ best!</span>
             <div class="row">
                 <!-- section image -->
                 <div class="col-md-6 col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden" style="background-image:url('http://placehold.it/1004x725');">
+                    <section id='insta_content'>
+                    </section>
+                    <div class="cover-red"></div>
                     <span class="architecture-title-number title-big alt-font font-weight-600 position-absolute white-text">04</span>
                 </div>
                 <!-- end section image -->
@@ -542,7 +546,8 @@ best!</span>
             <div class="row">
                 <!-- section image -->
                 <div class="col-md-6 col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden" style="background-image:url('images/call.jpg');">
-                    <span class="architecture-title-number title-big alt-font font-weight-600 position-absolute white-text">06</span>
+                    <div class="cover-red"></div>
+                    <span class="architecture-title-number title-big alt-font font-weight-600 position-absolute white-text">05</span>
                 </div>
                 <!-- end section image -->
                 <!-- section title -->
@@ -562,34 +567,37 @@ best!</span>
                 <div class="col-md-6 col-sm-12 architecture-title overflow-hidden sm-min-height-auto">
                     <div class="architecture-section sm-no-padding">
                         <div class="col-md-12 col-sm-12 no-padding sm-padding-nineteen xs-padding-twenty-nine xs-no-padding-lr xs-no-padding-top">
-                            <form id="architecturecontactform" action="javascript:void(0)" method="post">
+                            <form id="contactForm" action="javascript:void(0)" method="post">
                                 <div id="success" class="no-margin-lr"></div>
                                 <!-- input -->
-                                <input type="text" name="name" id="name" placeholder="* YOUR NAME" class="big-input alt-font">
+                                <input type="text" name="name" id="name" placeholder="* Name" class="big-input alt-font">
                                 <!-- end input -->
                                 <!-- input  -->
-                                <input type="text" name="email" id="email" placeholder="* YOUR EMAIL" class="big-input alt-font">
+                                <input type="email" name="email" id="email" placeholder="* Email" class="big-input alt-font">
+                                <!-- end input -->
+                                <!-- input  -->
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number" class="big-input alt-font">
                                 <!-- end input -->
                                 <!-- dropdown  -->
                                 <div class="select-style big-select alt-font">
                                     <select id="interestedin" name="interestedin">
-                                        <option selected>WHAT ARE YOU INTERESTED IN?</option>
-                                        <option value="studio">Studio(2D,3d,VFX)</option>
-                                        <option value="partnership">Partnership</option>
-                                        <option value="outsourcing">Outsourcing</option>
-                                        <option value="academy">Academy</option>
-                                        <option value="careers">Careers</option>
-                                        <option value="others">Others</option>
+                                        <option selected>Interested In?</option>
+                                        <option value="Studio(2D, 3D and VFX)">Studio(2D, 3D and VFX)</option>
+                                        <option value="Partnership">Partnership</option>
+                                        <option value="Outsourcing">Outsourcing</option>
+                                        <option value="Academy">Academy</option>
+                                        <option value="Career">Career</option>
+                                        <option value="Others">Others</option>
                                     </select>
                                 </div>
                                 <!-- end dropdown  -->
 
 
                                 <!-- textarea  -->
-                                <textarea name="comment" id="comment" placeholder="YOUR MESSAGE" class="big-input alt-font"></textarea>
+                                <textarea name="description" id="comment" placeholder="Description" class="big-input alt-font"></textarea>
                                 <!-- end textarea  -->
                                 <!-- button  -->
-                                <button id="architecture-contact-button" type="submit" class="highlight-button-red btn btn-medium">Ask A Question</button>
+                                <button type="submit" class="highlight-button-red btn btn-medium">Ask A Question</button>
                                 <!-- end button  -->
                             </form>
                         </div>
@@ -676,13 +684,13 @@ best!</span>
                     <!-- end text -->
 
                     <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr">
-                        <form id="form2" action="javascript:void(0)" method="post">
+                        <form id="enquireForm" method="post">
                             <div id="success" class="no-margin-lr"></div>
                             <!-- input -->
-                            <input type="text" name="name" id="name" placeholder="* YOUR NAME" class="big-input alt-font">
+                            <input type="text" name="name" id="name" placeholder="* Your Name" class="big-input alt-font">
                             <!-- end input -->
                             <!-- input  -->
-                            <input type="text" name="email" id="email" placeholder="* YOUR EMAIL" class="big-input alt-font">
+                            <input type="email" name="email" id="email" placeholder="* Your Email" class="big-input alt-font">
                             <!-- end input -->
                             <!-- dropdown  -->
                             <!-- dropdown  -->
@@ -690,7 +698,7 @@ best!</span>
                                     <div class="select-style big-select alt-font">
                                       <select id="animationStyle" name="animationStyle">
                                           <option selected>Animation Style</option>
-                                            <option value="2d">2D</option>
+                                            <option value="2D">2D</option>
                                             <option value="3D">3D</option>
                                       </select>
                                       </div></div>
@@ -700,11 +708,11 @@ best!</span>
                                       <div class="select-style big-select alt-font">
                                         <select id="quality" name="quality">
                                             <option selected>Quality Grade</option>
-                                            <option value="01">A+</option>
-                                            <option value="02">A</option>
-                                            <option value="03">B</option>
-                                            <option value="04">C</option>
-                                            <option value="05">D</option>
+                                            <option value="5">A+</option>
+                                            <option value="4">A</option>
+                                            <option value="3">B</option>
+                                            <option value="2">C</option>
+                                            <option value="1">D</option>
                                         </select>
                                     </div>
                                     </div>
@@ -722,10 +730,10 @@ best!</span>
                                   </div></div>
                                     <!-- end input -->
                             <!-- textarea  -->
-                            <textarea name="comment" id="comment" placeholder="Brief Description Of Project" class="big-input alt-font"></textarea>
+                            <textarea name="description" id="comment" placeholder="Brief Description Of Project" class="big-input alt-font"></textarea>
                             <!-- end textarea  -->
                             <!-- button  -->
-                            <button id="agency-contact-button" type="submit" class="highlight-button-red btn btn-medium">Get A Quote</button>
+                            <button type="submit" class="highlight-button-red btn btn-medium">Get A Quote</button>
                             <!-- end button  -->
                         </form>
                      </div>
@@ -796,6 +804,8 @@ best!</span>
     <!-- fit video  -->
     <script type="text/javascript" src="js/jquery.fitvids.js"></script>
     <!-- setting -->
+    <script type="text/javascript" src="js/jquery.serialize-object.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jqgoogleforms.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
