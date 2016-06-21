@@ -1739,10 +1739,30 @@ footer img {max-width: 156px;}
 }
 /* ModalGallery ends */
 
+.modal-body{
+    padding:0px;    
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 10%;
+}
+
+.modal .modal-body .item {
+  display: inline-block;
+  margin: 0px auto;
+}
+
 /* owl modal   */
+#owl-modal{
+  text-align: center;
+}
 #owl-modal .owl-item {
   opacity: 1;
   cursor: pointer;
+}
+#owl-modal .item {
+  display: inline-block;
+  margin: 0px auto;
 }
 #owl-modal .item img {
   display: block;
@@ -1782,8 +1802,8 @@ footer img {max-width: 156px;}
     box-shadow: none;
   }
   .modal-dialog {
-    width: 96%;
-    margin: 40px auto 0;
+    width: 60%;
+    margin: -40px auto 0;
   }
 }
 
