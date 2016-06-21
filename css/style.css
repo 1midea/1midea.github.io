@@ -1716,3 +1716,75 @@ footer img {max-width: 156px;}
     .fix-background-webkit{ background-attachment: scroll !important;}
     .no-transition-ipad *{ transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
 }
+
+/* ModalGallery  */
+#ModalGallery .close {
+  font-size: 40px;
+  /*line-height: 30px;*/
+  color: #fff;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  width: 30px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  position: absolute;
+  right: 34px;
+  top: -5px;
+  /*margin-top: 0;*/
+  z-index: 9999;
+}
+#ModalGallery .close:hover {
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* ModalGallery ends */
+
+/* owl modal   */
+#owl-modal .owl-item {
+  opacity: 1;
+  cursor: pointer;
+}
+#owl-modal .item img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+}
+/*owl MODAL custom controls*/
+#owl-modal .owl-controls .owl-buttons div {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  filter: Alpha(Opacity=50);
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+#owl-modal .owl-controls .owl-buttons div {
+  position: absolute;
+}
+#owl-modal .owl-controls .owl-buttons .owl-prev{
+  left: inherit;
+  right: 100px;
+  top: -40px;
+}
+#owl-modal .owl-controls .owl-buttons .owl-next{
+  right: 50px;
+  top: -40px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .modal-dialog {
+    width: 96%;
+    margin: 40px auto 0;
+  }
+}
+
+/* owl modal   */
