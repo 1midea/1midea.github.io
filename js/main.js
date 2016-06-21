@@ -665,3 +665,17 @@ $(function () {
                 $('b', this).toggleClass("caret caret-up");
             });
 });
+
+/*==============================================================
+   show Case modal
+==============================================================*/
+
+    $('#showCaseSlider .item a').on('click', function() {
+      var theSrc = $(this).find('img').attr('src');
+      var owlModal = $('#owl-modal');
+      owlModal.empty();
+      
+      var item = $('<div>', {'class' : 'item'}).appendTo(owlModal);
+      $('<img>', {'src' : theSrc}).appendTo(item);
+
+    });
