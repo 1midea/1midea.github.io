@@ -100,7 +100,7 @@ ul, ol, dl {list-style-position: outside;}
 h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin:0; padding:0; color: #000; }
 h1 { font-size:45px; line-height: 45px; line-height: 50px}
 h2 { font-size:40px; line-height:45px}
-h3 { font-size:35px; line-height:40px}
+h3 { font-size:20px; line-height:40px}
 h4 { font-size:25px; line-height:30px}
 h5 { font-size:20px; line-height:25px}
 h6 { font-size:18px; line-height:23px}
@@ -125,7 +125,7 @@ h1.page-title { margin:95px auto 0; width: 100%; }
 .title-small{ font-size:20px !important; line-height:30px !important;}
 .title-medium{ font-size:24px !important; line-height:28px !important;}
 .title-large{ font-size:28px !important; line-height:34px !important;}
-.title-extra-large{ font-size:35px !important; line-height:37px !important;}
+.title-extra-large{ font-size:28px !important; line-height:37px !important;}
 .title-extra-large-2{ font-size:45px !important; line-height:45px !important;}
 .title-extra-large-3{ font-size:50px !important; line-height:50px !important;}
 .title-extra-large-4{ font-size:70px !important; line-height:70px !important;}
@@ -1740,7 +1740,7 @@ footer img {max-width: 156px;}
 /* ModalGallery ends */
 
 .modal-body{
-    padding:0px;    
+    padding:0px;
     position: absolute;
     width: 60%;
     left: 20%;
