@@ -702,7 +702,7 @@ $(function () {
           owlModal.empty();
 
           if (videoId != null){
-            videoSrc = "https://player.vimeo.com/video/"+videoId
+            videoSrc = "https://player.vimeo.com/video/"+videoId+"?autoplay=1"
             $('<iframe>', {'src' : videoSrc}).appendTo(owlModal);
           }else{
             var item = $('<div>', {'class' : 'item'}).appendTo(owlModal);
