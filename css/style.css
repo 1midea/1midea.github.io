@@ -97,7 +97,7 @@ ul, ol, dl {list-style-position: outside;}
 ====================================== */
 
 /* heading */
-h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin:0; padding:0; color: #000; }
+h1, h2, h3, h4, h5, h6 { text-transform: none; margin:0; padding:0; color: #000; }
 h1 { font-size:45px; line-height: 45px; line-height: 50px}
 h2 { font-size:40px; line-height:45px}
 h3 { font-size:20px; line-height:40px}
@@ -110,7 +110,7 @@ h6 { font-size:18px; line-height:23px}
 .title-sideline:before { border-bottom: 4px solid #ef106e; content: ""; left: -15px; position: absolute; top: 15px; width: 12px; }
 
 /* section title */
-.section-title{ text-transform: uppercase; font-weight: 700; font-size: 20px; letter-spacing: 2px; padding: 0 0 100px 0;}
+.section-title{ text-transform: none; font-weight: 700; font-size: 20px; letter-spacing: 2px; padding: 0 0 100px 0;}
 .tab-content .section-title { border: medium none; font-size: 40px; font-weight: 100; text-transform: none; margin:2% 0 0; padding:0}
 h1.big { color:#ffffff; font-size:65px; font-weight:600; line-height:76px; margin-bottom:0px;}
 h1.big span { font-weight:300;}
