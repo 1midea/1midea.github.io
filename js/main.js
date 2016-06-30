@@ -671,11 +671,45 @@ $(function () {
 ==============================================================*/
 
     $('#showCaseSlider .item a').on('click', function() {
-      var theSrc = $(this).find('img').attr('src');
+      var img = $(this).find("img");
+      var imgSrc = img.attr("src");
+      var videoId = img.data('video');
       var owlModal = $('#owl-modal');
       owlModal.empty();
-      
-      var item = $('<div>', {'class' : 'item'}).appendTo(owlModal);
-      $('<img>', {'src' : theSrc}).appendTo(item);
+
+      if (videoId != null){
+        videoSrc = "https://www.youtube.com/embed/"+videoId
+        $('<iframe>', {'src' : videoSrc}).appendTo(owlModal);
+      }else{
+        var item = $('<div>', {'class' : 'item'}).appendTo(owlModal);
+        $('<img>', {'src' : imgSrc}).appendTo(owlModal);
+      }
+
+      $('#ModalGallery').unbind().on('hidden.bs.modal', function () {
+        owlModal.empty();
+      });
 
     });
+    /*==============================================================
+       Shoe Reel
+    ==============================================================*/
+
+        $('#showreel a').on('click', function() {
+          var img = $(this).find("img");
+          var imgSrc = img.attr("src");
+          var videoId = img.data('video');
+          var owlModal = $('#owl-modal');
+          owlModal.empty();
+
+          if (videoId != null){
+            videoSrc = "https://player.vimeo.com/video/"+videoId
+            $('<iframe>', {'src' : videoSrc}).appendTo(owlModal);
+          }else{
+            var item = $('<div>', {'class' : 'item'}).appendTo(owlModal);
+            $('<img>', {'src' : imgSrc}).appendTo(owlModal);
+          }
+
+          $('#ModalGallery').unbind().on('hidden.bs.modal', function () {
+            owlModal.empty();
+          });
+        });
