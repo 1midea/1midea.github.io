@@ -100,7 +100,7 @@ ul, ol, dl {list-style-position: outside;}
 h1, h2, h3, h4, h5, h6 { text-transform: none; margin:0; padding:0; color: #000; }
 h1 { font-size:45px; line-height: 45px; line-height: 50px}
 h2 { font-size:40px; line-height:45px}
-h3 { font-size:20px; line-height:40px}
+h3 { font-size:17px; line-height:32px}
 h4 { font-size:25px; line-height:30px}
 h5 { font-size:20px; line-height:25px}
 h6 { font-size:18px; line-height:23px}
@@ -556,7 +556,7 @@ i { color: #e31d3b; margin:0}
 .z-index-0 {z-index:0 !important;}
 .z-index-minus2 {z-index:-2 !important;}
 .no-transition *, .owl-carousel *, .mfp-container * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-section { padding: 130px 0; }
+section { padding: 90px 0; }
 .button-bg-area{padding: 80px 0;}
 
 /* ===================================
@@ -1815,4 +1815,33 @@ footer img {max-width: 156px;}
   height:480px;
   top:0;
   left:0;
+}
+
+
+/* embed video */
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 54.23%; /* 4:3 ratio */
+    padding-top: 0px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper-narrow {
+    padding-bottom: 0%;
+}
+
+iframe,object,embed,video,.videoWrapper,.video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js, img.vjs-poster {
+    width: 100% !important;
+    height: 100% !important; //these need !important because IE wants to set height/width to 100px
+    max-width: 100%;
 }
