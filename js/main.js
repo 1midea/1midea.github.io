@@ -713,3 +713,27 @@ $(function () {
             owlModal.empty();
           });
         });
+
+        /*==============================================================
+          3D Show Reel
+        ==============================================================*/
+
+            $('#showreel3d a').on('click', function() {
+              var img = $(this).find("img");
+              var imgSrc = img.attr("src");
+              var videoId = img.data('video');
+              var owlModal = $('#owl-modal');
+              owlModal.empty();
+
+              if (videoId != null){
+                videoSrc = "https://www.youtube.com/embed/"+videoId+"?autoplay=1&amp;rel=0&amp;showinfo=0"
+                $('<iframe>', {'src' : videoSrc}).appendTo(owlModal);
+              }else{
+                var item = $('<div>', {'class' : 'item'}).appendTo(owlModal);
+                $('<img>', {'src' : imgSrc}).appendTo(owlModal);
+              }
+
+              $('#ModalGallery').unbind().on('hidden.bs.modal', function () {
+                owlModal.empty();
+              });
+            });
